@@ -1,0 +1,108 @@
+version: "1"
+
+package:
+  id: io.github.oceanpop
+  name: oceanpop
+  version: 1.1.0.0
+  kind: app
+  description: |
+    A relaxing match 3 puzzle game with a twist
+
+base: org.deepin.foundation/23.0.0
+runtime: org.deepin.Runtime/23.0.1
+
+command:
+  - /opt/apps/io.github.oceanpop/files/bin/oceanpop
+
+sources:
+  - kind: git
+    url: https://github.com/sharkwouter/oceanpop.git
+    commit: 588ab93422bf3c2f640ac84a5d594b3a9190501b
+
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/libs/libsdl2/libsdl2-dev_2.30.0+dfsg-1_amd64.deb
+    digest: c12bb4f4afc105eadc9e27ac5bfc0a55a3536cf8c6ed6eca8a4d9b0a522bde3a
+
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/libs/libsdl2/libsdl2-2.0-0_2.30.0+dfsg-1_amd64.deb
+    digest: 35803e0e71d3e5ba55c48ca81f5c88d9e51e9f5b17c3acc7692027eadb282197
+
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/libs/libsdl2-image/libsdl2-image-2.0-0_2.0.5+dfsg1-3_amd64.deb
+    digest: b0ea082f41cf61587a5c9dea5e620124359ded306720d304724ae071267753e4
+
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/libs/libsdl2-image/libsdl2-image-dev_2.0.5+dfsg1-3_amd64.deb
+    digest: 52c4a6059b683b93dd80c9a96e9495862f3bb2170426223b5ce927c1a0d9058e
+
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/libs/libsdl2-mixer/libsdl2-mixer-2.0-0_2.0.4+dfsg1-4_amd64.deb
+    digest: bb53f91f7fd7328a91ae4b37e4ff19fab865fafc3a1374da342f56d79a3ef0e1
+
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/libs/libsdl2-mixer/libsdl2-mixer-dev_2.0.4+dfsg1-4_amd64.deb
+    digest: 0a3fed540462efa8e8cbe65d1721b34955a1fefe21ca5722c0d98999b48a99f5
+
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/libs/libsdl2-ttf/libsdl2-ttf-2.0-0_2.0.18+dfsg-3_amd64.deb
+    digest: fa42cea1b5fb3ed5ac9b302cfa61037c312895989151c1f121c880c4eb7e315c
+
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/libs/libsdl2-ttf/libsdl2-ttf-dev_2.0.18+dfsg-3_amd64.deb
+    digest: fb7950a174b272c816e8822d5974aad09e457420e27970df98e54cf3720435cb
+
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/libj/libjsoncpp/libjsoncpp-dev_1.9.5-6_amd64.deb
+    digest: 0c8d3f7ce374419a3479fff1ed320535a626c86dd9fc2cdd32a6a81f679921a1
+
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/libj/libjsoncpp/libjsoncpp25_1.9.5-6_amd64.deb
+    digest: c0ae3d0a5c102b22fc2f1ecae025b5bf393607318ec6832c3951fec7d29f81b5
+
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/libs/libsamplerate/libsamplerate0_0.2.2-1_amd64.deb
+    digest: 8ba9b50925d6722aad9a86f36483cc5cbf169c6199b21edd84f43bf142608cf5
+
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/libd/libdecor-0/libdecor-0-0_0.1.1-2_amd64.deb
+    digest: 5b895283ba2ebc72c8a15a6d4cfafd488edef9dda37ce58e6a3049133a0eec7d
+
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/libm/libmodplug/libmodplug1_0.8.9.0-3_amd64.deb
+    digest: a4c03acaabebe7860aad749bc846af636deb8b6dd47a8c85f5f1d4c1b2d13061
+
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/f/fluidsynth/libfluidsynth2_2.1.7-1.1_amd64.deb
+    digest: 93db0e43a532b77ee78a651068cbbd5bfe889c9db7b35ab977478c20f6e75893
+
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/libv/libvorbis/libvorbisfile3_1.3.7-1_amd64.deb
+    digest: 50a8cfed14d73f5e15fe13de7faae7d05b5e3a5afa79bac1ed373cf8487213a1
+
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/m/mpg123/libmpg123-0_1.32.3-1_amd64.deb
+    digest: 2ee8fe24498af82de3732ba76ae89a6dbdfd298c1da071a99ef40b0dda4609fc
+
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/o/opusfile/libopusfile0_0.9+20170913-1.1deepin_amd64.deb
+    digest: 8c3d504eec95db479d1a907f3b848ca4ff13ad9846f73f391a17a56bb0fc49e3
+
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/j/jack-audio-connection-kit/libjack0_0.125.0-3_amd64.deb
+    digest: 4c67b5f22237bc85e61020b35c997f196edf4f194aeaeff0085a5848faeb0ae6
+
+  - kind: file
+    url: https://community-packages.deepin.com/beige/pool/main/libi/libinstpatch/libinstpatch-1.0-2_1.1.6-1_amd64.deb
+    digest: 5be27e4700431bb095938367a1fa38118e8467261dceb8ee5013728ff69ad337
+
+build: |
+  echo "" > $PREFIX/packages.list
+  bash ./install_dep linglong/sources "$PREFIX"
+  cp -r ${PREFIX}/include/${TRIPLET}/SDL2/_real_SDL_config.h ${PREFIX}/include/SDL2/
+  
+  cd /project/linglong/sources/oceanpop.git
+  cmake -Bbuild \
+        -DCMAKE_INSTALL_PREFIX=${PREFIX} \
+        -DCMAKE_INSTALL_LIBDIR=${PREFIX}/lib/${TRIPLET}
+  cmake --build build
+  cmake --build build --target install
